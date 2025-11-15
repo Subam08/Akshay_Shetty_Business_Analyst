@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akshay Shetty — Business Analyst</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicons (optional) -->
+  <meta name="theme-color" content="#0b66c3"/>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">Akshay Shetty</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary" id="download-resume" href="assets/Akshay_Shetty_Business_Analyst.docx" download>Download Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1>Akshay Shetty</h1>
+        <p class="subtitle">Business Analyst • ERP Implementations • Data-driven Decisions</p>
+        <p>Business Analyst with 4+ years driving ERP implementations, gap analysis, and stakeholder alignment across SAP, Dynamics 365 and Oracle platforms. Recently completed MSc in Project Management.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#contact">Hire / Contact</a>
+          <a class="btn btn-outline" href="#experience">My Experience</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="photo-frame">
+          <img src="Akshay.jpg" alt="Akshay Shetty — profile photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section id="summary" class="section container">
+      <h2>Professional Summary</h2>
+      <p>Business Analyst with over four years of experience leading ERP implementations, requirements elicitation, gap analysis and stakeholder management. Skilled in translating business needs into technical requirements, designing dashboards and guiding UAT and change management to improve processes and reporting accuracy.</p>
+    </section>
+
+    <!-- Competencies & Skills -->
+    <section id="skills" class="section container">
+      <div class="grid-2">
+        <div>
+          <h3>Core Competencies</h3>
+          <ul class="bullet-list">
+            <li>Requirements Gathering & BRDs</li>
+            <li>Business Process Mapping & Gap Analysis</li>
+            <li>User Acceptance Testing (UAT)</li>
+            <li>Stakeholder Management & Training</li>
+            <li>Change Request Management</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Technical Skills</h3>
+          <div class="skill-grid">
+            <div class="skill"><strong>SAP Business One</strong></div>
+            <div class="skill"><strong>Dynamics 365</strong></div>
+            <div class="skill"><strong>Oracle ERP</strong></div>
+            <div class="skill"><strong>Power BI</strong></div>
+            <div class="skill"><strong>SQL & Excel (Advanced)</strong></div>
+            <div class="skill"><strong>Jira • MS Project • Visio</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+
+      <article class="exp-card">
+        <div class="exp-header">
+          <h3>Business Analyst / Project Coordinator</h3>
+          <span class="muted">Inode Technologies — Bangalore, India | Nov 2018 – Dec 2022</span>
+        </div>
+        <ul>
+          <li>Elicited and documented business requirements from 20+ stakeholders for ERP transformations (SAP, Dynamics 365).</li>
+          <li>Produced BRDs, FSDs, user stories and process flows that reduced requirement rework during implementation cycles.</li>
+          <li>Coordinated UAT with 50+ users and created rigorous test scenarios and acceptance criteria for multiple modules.</li>
+          <li>Designed executive dashboards and KPI reports using data warehousing — improved decision-making accuracy.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <div>
+          <h4>MSc — Project Management</h4>
+          <p>Northeastern University — Toronto, Canada (2023 - 2025)</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>PMP (In Progress, Expected Dec 2025)</li>
+        <li>Agile Software Development: Kanban (PMI)</li>
+        <li>Project Management Foundations: Requirements (PMI)</li>
+        <li>SAP ERP Essentials • SAP ABAP Certification</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact-section">
+      <h2>Contact</h2>
+      <p>Toronto, ON • Open to relocation • <a href="https://www.linkedin.com/in/shetty-subam/" target="_blank" rel="noopener">LinkedIn</a></p>
+
+      <form id="contactForm" class="contact-form" onsubmit="handleContact(event)">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <a class="btn btn-outline" href="Akshay_Shetty_Business_Analyst.docx" download>Download Resume</a>
+        </div>
+        <p class="note">This form opens your email client (works without backend). To accept messages via website, use Netlify/Forms or Formspree (I can help set that up).</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Akshay Shetty — Built with HTML & CSS</small>
+    </div>
+  </footer>
+
+  <!-- Minimal JS -->
+  <script>
+    // Insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+      toggle.setAttribute('aria-expanded', !expanded);
+      links.classList.toggle('open');
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        // close mobile nav
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Contact form fallback — opens user's email client with prefilled subject/body
+    function handleContact(e) {
+      e.preventDefault();
+      const f = e.target;
+      const name = encodeURIComponent(f.name.value.trim());
+      const email = encodeURIComponent(f.email.value.trim());
+      const message = encodeURIComponent(f.message.value.trim());
+      const subject = encodeURIComponent('Website message from ' + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:subamshetty@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
